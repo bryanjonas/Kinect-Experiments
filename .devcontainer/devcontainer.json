@@ -1,0 +1,15 @@
+{
+    "build": { "dockerfile": "Dockerfile" },
+    "settings": { 
+        "git.path": "/usr/bin/git"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": ["ms-toolsai.jupyter", "ms-python.python"]
+        }
+    },
+    "mounts": ["source=/dev/bus/usb/003,target=/dev/bus/usb/003,type=bind"],
+    "runArgs": ["--privileged"],
+    "privileged": true
+
+}
